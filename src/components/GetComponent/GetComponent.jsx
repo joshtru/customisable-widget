@@ -74,9 +74,7 @@ export const checkAndGetComponent = passedData => {
   }
 };
 const GetComponent = ({ data = [] }) => {
-  return (
-    <section className="get_component">{checkAndGetComponent(data)}</section>
-  );
+  return <div className="get_component">{checkAndGetComponent(data)}</div>;
 };
 
 export default GetComponent;
