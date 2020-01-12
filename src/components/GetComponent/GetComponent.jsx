@@ -67,8 +67,8 @@ export const checkAndGetComponent = passedData => {
       );
   }
 };
-const GetComponent = ({ data = [] }) => {
-  return <div className="get_component">{checkAndGetComponent(data)}</div>;
+const GetComponent = ({ data = {} }) => {
+  return <div>{checkAndGetComponent(data)}</div>;
 };
 
 export default GetComponent;
