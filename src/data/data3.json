@@ -1,0 +1,28 @@
+{
+  "Content": {
+    "type": "ModalComponent",
+    "props": {
+      "isOpen": true,
+      "width": "500px",
+      "height": "600px"
+    }
+  },
+  "Children": {
+    "child1": {
+      "Content": {
+        "type": "H1Component",
+        "props": {
+          "text": "Tool tipps for use"
+        }
+      }
+    },
+    "child2": {
+      "Content": {
+        "type": "ParagraphComponent",
+        "props": {
+          "text": "When using our widget, the following aspects are important"
+        }
+      }
+    }
+  }
+}
