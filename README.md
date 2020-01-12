@@ -1,35 +1,25 @@
-For our partners to add more dynamic behaviour to the `LinkComponent` and `ButtonComponent` through the `data.json`, they have to specify the functionality in the props of the the component.
-Example
+# CUSTOMISABLE WIDGET
 
-```json
-...
-{
-  "Content": {
-    "type": "LinkComponent",
-    "props": {
-      "triggerModal": true, 👈
-      "url": "https://lmgtfy.com/",
-      "text": "I open a link but I should also open the modal."
-    }
-  },
-}
-....
+Customisable widget haand over the freedom and power to be able to configure your owe widget based on the the JSON data provided.
+
+Based on the data, components are rendered dynamically eliminating all restriction to follow and have a certain type of widget.
+
+## Setup for Demo
+
+```bash
+cd ../customisable-widget
+npm i or npm install
+npm start
 ```
 
-```json
-...
-{
-  "Content": {
-    "type": "ButtonComponent",
-    "props": {
-      "triggerModal": false, 👈
-      "text": "Click me to open the modal"
-    }
-  }
-}
-...
-```
+## Technologies
 
-Note:
-If that's not specified, the widget with return to the default function of using the `ButtonComponent` to trigger the `ModalComponent`.
-Also, if you are specifying the `LinkComponent` trigger the `ModalComponent` the `ButtonComponent` will still trigger the `ModalComponent`if not specified not to.
+- [Html](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [Css](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [React js](https://reactjs.org)
+- [Redux](https://redux.js.org)
+
+## Read More
+
+- [Go to Notes](./docs/notes#How-I-think-the-widget-should-be-made-customisable)
+- [Dynamic Behaviour to LinkComponent and ButtonComponent](./docs/notes#Dynamic-Behaviour-to-LinkComponent-and-ButtonComponent)
