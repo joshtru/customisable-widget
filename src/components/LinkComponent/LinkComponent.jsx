@@ -9,5 +9,13 @@ const LinkComponent = ({ text, url }) => (
   >
     {text}
   </a>
-);
-export default LinkComponent;
+// Define prop types
+LinkComponent.defaultProps = {
+  triggerModal: false,
+  url: "#"
+};
+LinkComponent.propTypes = {
+  text: PropTypes.string,
+  url: PropTypes.string,
+  triggerModal: PropTypes.bool
+};

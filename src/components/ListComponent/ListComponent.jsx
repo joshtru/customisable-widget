@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
-
-const ListComponent = ({li}) =>
+import styles from "./ListComponent.module.css";
+const ListComponent = ({ li }) =>
   li ? (
-    <div>
+    <div className={styles.list_component}>
       <ul>
         {li.map((list, index) => (
           <li key={index}>{list}</li>
@@ -12,8 +12,8 @@ const ListComponent = ({li}) =>
     </div>
   ) : null;
 
-ListComponent.propsTypes = {
-  li: PropTypes.string
+ListComponent.propTypes = {
+  li: PropTypes.arrayOf(PropTypes.string)
 };
 
 export default ListComponent;
