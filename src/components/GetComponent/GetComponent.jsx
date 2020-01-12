@@ -10,7 +10,8 @@ import ButtonComponent from "../ButtonComponent/ButtonComponent";
 import LinkComponent from "../LinkComponent/LinkComponent";
 import BoxComponent from "../BoxComponent/BoxComponent";
 
-export const checkAndGetComponent = passedData => {
+// Find and return desired component passing the props
+const checkAndGetComponent = passedData => {
   switch (passedData.Content.type) {
     case "ModalComponent":
       return <ModalComponent key={passedData.Content.type} {...passedData} />;
@@ -61,12 +62,13 @@ export const checkAndGetComponent = passedData => {
     default:
       return (
         <div>
-          <h1>Welcome to Customizable Widget.</h1>
-          <p>Pass a JSON to see some functions</p>
+          <p>Component not found/properly rendered</p>
         </div>
       );
   }
 };
+// Pass data into the checkAndGetComponent function
+// to locate component
 const GetComponent = ({ data = {} }) => {
   return <div>{checkAndGetComponent(data)}</div>;
 };
