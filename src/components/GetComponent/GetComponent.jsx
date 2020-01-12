@@ -11,15 +11,9 @@ import LinkComponent from "../LinkComponent/LinkComponent";
 import BoxComponent from "../BoxComponent/BoxComponent";
 
 export const checkAndGetComponent = passedData => {
-  console.log(passedData.Content);
   switch (passedData.Content.type) {
     case "ModalComponent":
-      return (
-        <ModalComponent
-          key={passedData.Content.type}
-          {...passedData.Content.props}
-        />
-      );
+      return <ModalComponent key={passedData.Content.type} {...passedData} />;
     case "H1Component":
       return (
         <H1Component
