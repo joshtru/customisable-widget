@@ -18,8 +18,3 @@ npm start
 - [Css](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [React js](https://reactjs.org)
 - [Redux](https://redux.js.org)
-
-## Read More
-
-- [Go to Notes](./docs/notes#How-I-think-the-widget-should-be-made-customisable)
-- [Dynamic Behaviour to LinkComponent and ButtonComponent](./docs/notes#Dynamic-Behaviour-to-LinkComponent-and-ButtonComponent)
